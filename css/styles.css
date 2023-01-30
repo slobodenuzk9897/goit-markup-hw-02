@@ -1,3 +1,84 @@
-body { 
-    background-color: #fff;
+:root {
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --accent-color: #404bbf;
+  --primary-bg-color: #2e2f42;
+  --white-color: #ffffff;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+  font-family: 'Roboto', sans-serif;
+}
+ul {
+  list-style: none;
+}
+.logo {
+  color: #4d5ae5;
+}
+
+/* Site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* auth-nav */
+.auth-nav .link-adress {
+  color: var(--primary-text-color);
+}
+
+.auth-nav .link-adress:hover,
+.auth-nav .link-adress:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero-title {
+  color: var(--white-color);
+  background-color: var(--primary-bg-color);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white-color);
+  background-color: #404bbf;
+}
+
+.button {
+  color: var(--white-color);
+  background-color: #4d5ae5;
+}
+
+/* Sections */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Characteristics */
+.list-title {
+  color: var(--title-text-color);
+}
+
+.list-text {
+  color: var(--primary-text-color);
+}
+
+/* Team */
+.team-title {
+  color: var(--title-text-color);
+}
+
+.team-text {
+  color: var(--primary-text-color);
+}
+
+.footer-text {
+  color: #e7e9fc;
+  background-color: var(--primary-bg-color);
 }
