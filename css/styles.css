@@ -26,6 +26,15 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.logo .accent {
+  color: #2e2f42;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 
 /* Site nav */
 .site-nav .link {
