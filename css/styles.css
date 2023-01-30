@@ -52,6 +52,8 @@ ul {
 /* auth-nav */
 .auth-nav .link-adress {
   color: var(--primary-text-color);
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -135,4 +137,26 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+}
+
+/* Portfolio */
+.button-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+}
+
+.button-header:hover,
+.button-header:focus {
+  color: #4d5ae5;
+  background: #f4f4fd;
+}
+.filtrs .button-header:active {
+  color: var(--white-color);
+  background: #404bbf;
 }
