@@ -4,6 +4,7 @@
   --accent-color: #404bbf;
   --white-color: #ffffff;
   --blue-color-button: #4d5ae5;
+  --white-color-with-shadow: #f4f4fd;
 }
 
 body {
@@ -43,6 +44,10 @@ element.style {
   line-height: 1.5;
   text-decoration: none;
 }
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -66,9 +71,12 @@ element.style {
 
 /* Hero */
 
+.hero {
+  background-color: var(--title-text-color);
+}
+
 .hero-title {
   color: var(--white-color);
-  background-color: var(--title-text-color);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -89,17 +97,22 @@ element.style {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  cursor: pointer;
 }
 
 /* Sections header*/
-.section-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 0.02em;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Characteristics*/
@@ -121,7 +134,7 @@ element.style {
 
 /* Team */
 .section-color {
-  background-color: #f4f4fd;
+  background-color: var(--white-color-with-shadow);
 }
 .team-title {
   color: var(--title-text-color);
@@ -139,9 +152,12 @@ element.style {
   letter-spacing: 0.02em;
 }
 
+.footer {
+  background-color: var(--title-text-color);
+}
+
 .footer-text {
   color: #e7e9fc;
-  background-color: var(--title-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -157,14 +173,19 @@ element.style {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--blue-color-button);
+  cursor: pointer;
 }
 
 .button-header:hover,
 .button-header:focus {
   color: var(--blue-color-button);
-  background-color: #f4f4fd;
+  background-color: var(--white-color-with-shadow);
 }
 .filtrs .button-header:active {
   color: var(--white-color);
   background: var(--accent-color);
+}
+
+.logo .accent-footer {
+  color: var(--white-color-with-shadow);
 }
