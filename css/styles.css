@@ -38,14 +38,13 @@ element.style {
 /* Site nav */
 .site-nav .link.current {
   color: var(--accent-color);
+}
+.site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
-}
-.site-nav .link {
-  color: var(--title-text-color);
 }
 
 .site-nav .link:hover,
@@ -133,6 +132,16 @@ element.style {
 }
 
 /* Team */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-text-color);
+}
+
 .section-color {
   background-color: var(--white-color-with-shadow);
 }
@@ -174,12 +183,14 @@ element.style {
   letter-spacing: 0.04em;
   color: var(--blue-color-button);
   cursor: pointer;
+  font-family: inherit;
+  background-color: var(--white-color-with-shadow);
 }
 
 .button-header:hover,
 .button-header:focus {
-  color: var(--blue-color-button);
-  background-color: var(--white-color-with-shadow);
+  color: var(--white-color);
+  background-color: #404bbf;
 }
 .filtrs .button-header:active {
   color: var(--white-color);
